@@ -1,0 +1,7 @@
+RewriteEngine On
+
+RewriteRule ^add-listing/([0-9]+) add-listing/index.php?pid=$1
+
+RewriteRule ^business/profile/(.+)$  business/profile.php?slugid=$1 
+
+RewriteRule ^products/(.+)/(.+)$  products/product.php?bslug=$1&pslug=$2
